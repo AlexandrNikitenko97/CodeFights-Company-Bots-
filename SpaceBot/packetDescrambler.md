@@ -6,6 +6,7 @@ fragments may be lost. It's also possible that they can be corrupted or arrive o
 Each fragment contains the following data:
 
     seq - The sequential number of the fragment in the message. This part of the fragment is never corrupted.
+    
     fragmentData - A single character from the message contained in the fragment.
 
 Implement a function that receives an array of message fragments and reconstructs the original message according 
@@ -23,7 +24,8 @@ If the message cannot be reconstructed, return an empty string. Otherwise, retur
 
 Example
 
-For seq = [1, 1, 0, 0, 0, 2, 2, 2], fragmentData = ['+', '+', 'A', 'A', 'B', '#', '#', '#'], and n = 3, the output should be
+For seq = [1, 1, 0, 0, 0, 2, 2, 2], fragmentData = ['+', '+', 'A', 'A', 'B', '#', '#', '#'], and n = 3, 
+the output should be
 packetDescrambler(seq, fragmentData, n) = "A+#".
 
     For the fragment with index 0 (sequential number), 2 'A's and 1 'B' were received. So, the number of 
