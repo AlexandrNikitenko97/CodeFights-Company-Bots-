@@ -22,9 +22,10 @@ Example
     allianceVersusMonster(healthPoints, attackDamage) = 2.
 
     One of the optimal strategies is as follows:
-        Attack the monster four times with the second warrior. The monster's health will become 110 - 20 * 4 = 30, 
-        while the warrior's health will be 50 - 12 * 4 = 2.
-        If you use the second warrior again immediately, it will die. Therefore, use the first warrior instead. 
+        Attack the monster four times with the second warrior. 
+        The monster's health will become 110 - 20 * 4 = 30, while the warrior's health will be 50 - 12 * 4 = 2.
+        If you use the second warrior again immediately, it will die.
+        Therefore, use the first warrior instead. 
         Its three attacks will deplete the monster's health by 11 * 3 = 33 points, 
         while the monster will respond only twice. After the third attack it will die instantly. 
         Your first warrior's health will be 30 - 12 * 2 = 6 after the fight ends.
@@ -61,4 +62,5 @@ Input/Output
 
     [output] integer
 
-    The maximum number of your warriors that will remain after defeating the monster, or 0 if it's impossible to kill a monster without losing all your warriors.
+    The maximum number of your warriors that will remain after defeating the monster, or 0 if it's 
+    impossible to kill a monster without losing all your warriors.
