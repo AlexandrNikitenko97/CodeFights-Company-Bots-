@@ -1,5 +1,4 @@
 # Super Ugly Solution
-
 def marathonTaskScore(marathonLength, maxScore, submissions, successfulSubmissionTime):
     penaltyScore = ((submissions - 1) if submissions > 1 else 0 ) * 10
     timeScore = maxScore if successfulSubmissionTime <= 1 and submissions == 1 else successfulSubmissionTime * (maxScore / 2) * (1 / marathonLength) 
