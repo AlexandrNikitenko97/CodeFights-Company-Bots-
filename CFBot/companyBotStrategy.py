@@ -10,5 +10,5 @@ def companyBotStrategy(trainingData):
         if i[1] == 1:
             correct += i[0]
             divider += 1
-    return 0.0 if dividor == 0 else correct/divider
+    return 0.0 if divider == 0 else correct/divider
             
