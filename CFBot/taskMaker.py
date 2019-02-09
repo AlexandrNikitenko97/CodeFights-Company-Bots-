@@ -1,11 +1,10 @@
 def taskMaker(source, challengeId):
-  template = ('//DB ' + str(challengeId) + '//')
-  newSource = []
-  neededLine = ''
-  for i in source:
-    if ('//DB' not in i):
-      newSource.append(i)
-    else:
-      if template in i:
-        newSource[-1] = i.replace(template, '')
-  return newSource
+    pattern = r"//DB " + str(challengeId) + "//"
+    newSource = []
+    for line in source:
+        if "//DB" in line:
+            if pattern in line:
+                newSource[-1] = line.replace(pattern, "")
+        else:
+            newSource.append(line)
+    return newSource
